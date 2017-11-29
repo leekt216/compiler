@@ -6,7 +6,12 @@ CC = gcc
 LEX = flex
 YACC = bison
 COMPILE_OPTION = -g
+OS := $(shell uname)
+ifeq(@(OS),Darwin)
+LINK_OPTION = -ll
+else
 LINK_OPTION = -lfl
+endif
 YACC_OPTION = -vd
 
 all : subc

@@ -7,7 +7,7 @@ LEX = flex
 YACC = bison
 COMPILE_OPTION = -g
 OS := $(shell uname)
-ifeq(@(OS),Darwin)
+ifeq($(OS),Darwin)
 LINK_OPTION = -ll
 else
 LINK_OPTION = -lfl

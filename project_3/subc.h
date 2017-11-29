@@ -114,7 +114,7 @@ int check_is_array(struct decl* declptr);
 int check_is_proc(struct decl* declptr);
 int check_compatible(struct decl* decl1, struct decl* decl2);
 
-struct decl* structaccess(struct decl* structdecl, struct id* ID);
+struct decl* structaccess(struct decl* structdecl, struct id* ID_);
 struct decl* arrayaccess(struct decl* arraydecl, struct decl* IndexVarOrConstDecl);
 struct decl* plusdecl(struct decl* decl1, struct decl* decl2);
 struct decl* minusdecl(struct decl* decl1, struct decl* decl2);
